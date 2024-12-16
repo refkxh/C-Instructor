@@ -1,6 +1,6 @@
 # C-Instructor: Controllable Navigation Instruction Generation with Chain of Thought Prompting
 
-Official implementation of the **ECCV 2024** paper **Controllable Navigation Instruction Generation with Chain of Thought Prompting** [Link](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/04155.pdf).
+Official implementation of the **ECCV 2024** paper **Controllable Navigation Instruction Generation with Chain of Thought Prompting** [[Link]](https://www.ecva.net/papers/eccv_2024/papers_ECCV/papers/04155.pdf).
 
 <div align="center"><img src="images/c-instructor.png" width="800"/></div>
 
