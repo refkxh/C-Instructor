@@ -1,0 +1,25 @@
+{
+    "train_datasets": {
+        "R2R": {
+            "name": "R2R",
+            "train_traj_files": ["/data/user/kxh/instructllm/Matterport3DSimulator/tasks/REVERIE/data/pretrain/train_landmark_vis.jsonl"
+                                ],
+            "val_seen_traj_files": ["/data/user/kxh/instructllm/Matterport3DSimulator/tasks/REVERIE/data/pretrain/val_seen_landmark_vis.jsonl"], 
+            "val_unseen_traj_files": ["/data/user/kxh/instructllm/Matterport3DSimulator/tasks/REVERIE/data/pretrain/val_unseen_landmark_vis.jsonl"],
+            "img_ft_file": "/data/user/kxh/instructllm/Matterport3DSimulator/img_features/vit_l_14_clip.hdf5",
+            "scanvp_cands_file": "/data/user/kxh/instructllm/Matterport3DSimulator/tasks/REVERIE/data/pretrain/scanvp_candview_relangles.json",
+            "connectivity_dir": "/data/user/kxh/instructllm/Matterport3DSimulator/connectivity",
+            "bboxes_file": "/data/user/kxh/instructllm/Matterport3DSimulator/tasks/REVERIE/data/BBoxes.json",
+            "tasks": [
+                "sap",
+                "itm",
+                "lmp"
+            ],
+            "mix_ratio": [
+                4,
+                1,
+                1
+            ]
+        }
+    }
+}

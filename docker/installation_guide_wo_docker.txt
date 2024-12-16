@@ -1,0 +1,24 @@
+# Install glvnd
+sudo apt update && sudo apt install -y \
+        pkg-config \
+        libglvnd-dev \
+        libgl1-mesa-dev \
+        libegl1-mesa-dev \
+        libgles2-mesa-dev
+
+
+# Install a few libraries to support both EGL and OSMESA options
+sudo apt update && sudo apt install -y wget doxygen curl libjsoncpp-dev libepoxy-dev libglm-dev libosmesa6 libosmesa6-dev libglew-dev libopencv-dev python3-setuptools python3-dev python3-pip git htop tmux libaio-dev zip nload
+pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple
+ torch torchvision torchaudio opencv-python numpy pandas networkx fairscale sentencepiece gradio gpustat h5py progressbar2 lmdb jsonlines easydict tensorboard ipykernel
+pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple deepspeed
+pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple git+https://github.com/csuhan/timm_0_3_2.git
+pip3 install -i https://pypi.tuna.tsinghua.edu.cn/simple git+https://github.com/openai/CLIP.git
+
+# Install latest cmake
+sudo wget -O cmake-3.27.4-linux-x86_64.sh https://cmake.org/files/v3.27/cmake-3.27.4-linux-x86_64.sh 
+sudo mkdir /opt/cmake
+sudo sh cmake-3.27.4-linux-x86_64.sh --prefix=/opt/cmake --skip-license
+sudo ln -s /opt/cmake/bin/cmake /usr/local/bin/cmake
+
+export PYTHONPATH=/{PATH_TO_SIMULATOR}/Matterport3DSimulator/build
